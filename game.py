@@ -8,33 +8,3 @@ import settings
 
 
 
-'''
-The main game loop, Here is where the game loop is executed.
-
-'''
-
-
-
-
-# where elements gets blit and draw
-def draw_window():
-    pass
-
-
-
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        
-    
-    
-    
-    
-    
-    pygame.display.flip()
-
-# Quit Pygame
-pygame.quit()
-
