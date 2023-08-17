@@ -13,6 +13,8 @@ GREEN = 0, 255, 0
 BLUE = 0, 0, 255
 
 
+"""
+
 
 
 # Screen
@@ -28,3 +30,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
 
 # Title
 pygame.display.set_caption("Ocean Guardian")
+
+
+
+"""

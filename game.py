@@ -7,20 +7,31 @@ import pyrebase
 import settings
 
 
-# important notes. If calling a class attribute, make sure to not add parenthesis if not a method and also make sure you allocated the class into a vatiable.
+# Game logic
 
 
-
-class game:
+class Game:
     def __init__(self):
         self.state = "intro"
+        
     def game_manager(self):
         if self.state == "intro":
-        
-        if self.state   
-
-
+            print("you are at the intro!")
+        elif self.state == "candy_crush":
+            print("you are at candy crush!")
+        elif self.state == "end_screen":
+            print("you are at end screen!")
+game = Game() # Create an instance
 
 running = True
 while running:
     # game loop
+    game.game_manager()
+    new_state = input("'intro' or 'candy_crush' or 'end_screen' ")
+    game.state = new_state
+    print(f"results: {game.state}")
+    if game.state != 'candy_crush' and game.state != "intro" and game.state != "end_screen":
+        print("invalid syntax!")
+        break
+    else:
+        continue
