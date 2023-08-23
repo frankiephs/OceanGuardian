@@ -7,6 +7,16 @@ import pyrebase
 import settings
 
 
+
+class candy_crush:
+    def __init__(self):
+        self.candy_crush = self.candy_crush
+        
+    class candy:
+        pass
+
+
+
 # Game logic
 
 
@@ -23,15 +33,11 @@ class Game:
             print("you are at end screen!")
 game = Game() # Create an instance
 
+
+
 running = True
 while running:
     # game loop
     game.game_manager()
-    new_state = input("'intro' or 'candy_crush' or 'end_screen' ")
-    game.state = new_state
-    print(f"results: {game.state}")
-    if game.state != 'candy_crush' and game.state != "intro" and game.state != "end_screen":
-        print("invalid syntax!")
-        break
-    else:
-        continue
+    
+    if game.state = 
